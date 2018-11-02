@@ -1,3 +1,14 @@
 <?xml version="1.0" encoding="utf-8" ?>
-        <phpunit colors="true" bootstrap="../vendor/autoload.php">
+<phpunit
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="https://schema.phpunit.de/6.5/phpunit.xsd"
+        colors="true" bootstrap="../vendor/autoload.php">
+    <filter>
+        <whitelist>
+            <directory suffix=".php">../</directory>
+            <exclude>
+                <directory suffix=".php">../vendor/</directory>
+            </exclude>
+        </whitelist>
+    </filter>
 </phpunit>
