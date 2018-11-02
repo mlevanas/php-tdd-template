@@ -9,7 +9,7 @@ class FirstTest extends \PHPUnit\Framework\TestCase
     /**
      * @test
      */
-    public function testAutoloadingShouldWork()
+    public function testAutoloaderShouldWork()
     {
         $app = new \App\Template();
         Assert::assertNotNull($app);
